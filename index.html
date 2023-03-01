@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Aplikasi Daftar Produk</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                <li class="active"><a href="index.html">Daftar Produk</a></li>
+                <li><a href="kategori.html">Kategori Produk</a></li>
+                <li><a href="transaksi.html">Transaksi penjualan</a></li>
+                <li><a href="konsumen.html">Konsumen</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container mx-auto">
+        <div class="">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">Daftar Produk</h2>
+                    <p>
+                        <form id="form-produk" action="" onsubmit="event.preventDefault(); tambahProduk(this)">
+                            <input type="hidden" name="index" value="-1">
+                            <div>
+                                <div>
+                                    <label for="nama" class="label">Nama Produk</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="nama" name="nama" class="input input-bordered input-primary file-input-sm w-full max-w-xs">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="harga" class="label">harga Produk</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="harga" name="harga" class="input input-bordered input-primary file-input-sm w-full max-w-xs">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="stok" class="label">Stok Produk</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="stok" name="stok" class="input input-bordered input-primary file-input-sm w-full max-w-xs">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="gambar" class="label">Link Gambar Produk</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="gambar" name="gambar" class="input input-bordered input-primary file-input-sm w-full max-w-xs">
+                                </div>
+                            </div>
+                            <div class="card-actions justify-end">
+                                <button id="btn-save-produk" class="btn btn-black mt-2 btn-sm">Tambah</button>
+                            </div>
+                        </form>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                 <h2 class="card-title">Daftar Produk</h2>
+            <p>
+                     <div id="daftar-produk" class="menu"></div>
+                              </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+</body>
+</html>
